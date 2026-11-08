@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAIKA Pharma - Stand 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+
+<script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+}
+</script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">LAIKA</div>
+        <div class="subtitle">PHARMA EXHIBITION STAND</div>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h1>LAIKA Pharma</h1>
+            <p>Configuratore interattivo dello stand espositivo</p>
+        </section>
+
+        <section class="workspace">
+
+            <div id="scene-container"></div>
+
+            <aside class="controls">
+                <h2>Personalizza lo stand</h2>
+
+                <label for="wallColor">Colore pareti</label>
+                <input type="color" id="wallColor" value="#65418b">
+
+                <label for="deskColor">Colore reception</label>
+                <input type="color" id="deskColor" value="#e8e2ef">
+
+                <button id="resetButton">Ripristina colori</button>
+
+                <p class="instructions">
+                    Usa il mouse per ruotare e osservare lo stand.
+                </p>
+            </aside>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
